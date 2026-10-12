@@ -1,0 +1,155 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: #f2f4f7;
+
+}
+
+
+.container {
+
+    width: 90%;
+
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+}
+
+
+h1 {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+}
+
+
+.card {
+
+    background: white;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+input,
+select {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 8px 0;
+
+    border: 1px solid #ccc;
+
+    border-radius: 5px;
+
+    background: white;
+
+}
+
+
+button {
+
+    padding: 10px 16px;
+
+    margin: 8px 5px 8px 0;
+
+    border: none;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+
+button:hover {
+
+    background: #1d4ed8;
+
+}
+
+
+table {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    border-collapse: collapse;
+
+}
+
+
+th,
+td {
+
+    border: 1px solid #ddd;
+
+    padding: 12px;
+
+    text-align: center;
+
+}
+
+
+th {
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+
+.edit-btn {
+
+    background: #16a34a;
+
+}
+
+
+.delete-btn {
+
+    background: #dc2626;
+
+}
+
+
+.error {
+
+    color: #dc2626;
+
+    font-weight: bold;
+
+    margin: 10px 0;
+
+    min-height: 20px;
+
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <!-- Student Form -->
+        <div class="card">
+
+            <h2>Student Details</h2>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+            >
+
+            <input
+                type="text"
+                id="rollno"
+                placeholder="Enter Roll Number"
+            >
+
+            <input
+                type="number"
+                id="age"
+                placeholder="Enter Age (15 - 25)"
+                min="15"
+                max="25"
+            >
+
+            <input
+                type="text"
+                id="department"
+                placeholder="Enter Department (CSE, ECE, AIML)"
+            >
+
+            <!-- Error Message -->
+            <div id="errorMessage" class="error"></div>
+
+            <button onclick="addStudent()">
+                Add Student
+            </button>
+
+            <button onclick="updateStudent()">
+                Update Student
+            </button>
+
+            <button onclick="clearForm()">
+                Clear
+            </button>
+
+        </div>
+
+
+        <!-- Student Table -->
+        <div class="card">
+
+            <h2>Student List</h2>
+
+            <button onclick="getStudents()">
+                Refresh
+            </button>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Name</th>
+                        <th>Roll Number</th>
+                        <th>Age</th>
+                        <th>Department</th>
+                        <th>Actions</th>
+                    </tr>
+
+                </thead>
+
+                <tbody id="studentTable">
+                    <!-- Students will appear here -->
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
